@@ -5,7 +5,7 @@
       justify-content: space-between;
       align-items: center;
        max-width: 1880px;
-       height: 900px;
+       height: clamp(330px, calc(330px + (900 - 330) * (100vw - 375px) / (1880 - 375)), 900px);
        border-radius: 20px;
        background: rgb(255, 255, 255);
    }
@@ -20,7 +20,7 @@
        justify-content: space-between;
        align-items: center;
        padding: 0px;
-       margin-top: 100px;
+       margin-top: clamp(50px, calc(50px + (100 - 50) * (100vw - 375px) / (1880 - 375)), 100px);
        @media (max-width: 768px) {
         flex-direction: column;
         gap: 24px;
