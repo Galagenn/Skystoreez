@@ -1,0 +1,401 @@
+
+
+.section-one{
+    &__title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+        h2{
+           /* Skystoreez – это инновационная платформа, которая революционизирует мир розничной торговли. */
+            max-width: 1300px;
+            height: 92px;
+            left: 310px;
+            top: 1010px; 
+            font-size: clamp(20px, calc(20px + (38 - 20) * ((100vw - 390px) / (1880 - 390))), 38px);
+            color: rgb(0, 0, 0);
+            font-weight: 500;
+            line-height: 46px;
+            letter-spacing: 0%;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        p{
+            /* Объединяем физические магазины и создаем для них виртуальные торговые пространства, где клиенты могут совершать покупки в любое время и в любом месте. */
+            max-width: 700px;
+            height: 72px;
+            left: 610px;
+            color: rgb(0, 0, 0);
+            font-family: Inter;
+            font-size: clamp(16px, calc(16px + (20 - 16) * ((100vw - 390px) / (1880 - 390))), 20px);
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0%;
+            text-align: center;
+        }
+    }
+    &__img{
+        margin-top: 115px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+            /* Group 19 */
+            max-width: 1066.76px;
+            max-height: 1002px;
+            left: 427px;
+            right: 426.24px;
+            top: 1318px;
+            bottom: 7449px;
+        }
+    }
+}
+
+
+//========================================================================================================================================================
+
+
+// SECTION TWO
+
+.section-two{
+    margin-top: 200px;
+    max-height: 800px;
+    height: 100vh;
+    &__title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 70px;
+        h2{
+            /* Почему Skystoreez? */
+            max-width: 444px;
+            height: 46px;
+            left: 738px;
+            top: 2520px;
+            color: rgb(0, 0, 0);
+            font-family: Inter;
+            font-size: 38px;
+            font-weight: 500;
+            line-height: 46px;
+            letter-spacing: 0%;
+            text-align: left;
+            text-transform: uppercase;
+        }
+        p{
+            /* Помогаем ритейлерам решать ключевые задачи, улучшая качество взаимодействия с их клиентами. */
+            max-width: 613px;
+            height: 48px;
+            left: 654px;
+            top: 2596px;
+            color: rgb(0, 0, 0);
+            font-family: Inter;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0%;
+            text-align: center;
+        }
+    }
+}
+
+.block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #000;
+    gap: 20px;
+    p{
+        /* Покупатели все чаще выбирают онлайн-шопинг, что негативно отражается на традиционных магазинах. */
+        width: 360px;
+        height: 105px;
+        color: rgb(0, 0, 0);
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+    &__top{
+        display: flex;
+        align-items:center;
+        justify-content: space-between;
+        h3{
+            /* Падение трафика в торговых центрах: */
+            width: 300px;
+            height: 58px;
+            left: 320px;
+            top: 2734px;
+            color: rgb(0, 0, 0);
+            font-family: Inter;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 29px;
+            letter-spacing: 0%;
+            text-align: left;
+            text-transform: uppercase;
+        }
+        div{
+            /* Проблема №1 */
+            width: 145px;
+            height: 31px;
+            box-sizing: border-box;
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 200px;
+            opacity: 0.6;
+                        /* Автолейаут */
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 10;
+            padding: 6px 12px 6px 12px;
+            /* Inside Auto Layout */
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+            margin: 0px 10px;
+            color: rgb(0, 0, 0);
+            font-family: Inter;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 18px;
+            letter-spacing: 0%;
+            text-align: left;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.blocks{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 20px;
+    background: #fff;
+    max-width: 650px;
+    height: 328px;
+    width: 45%;
+    
+}
+
+
+//========================================================================================================================================================
+
+
+// SECTION THREE
+
+.section-three{
+    margin-top: 200px;
+    &__title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 70px;
+        color: #000;
+    }
+}
+
+.block__one{
+    background: 
+    linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), /* Полупрозрачный белый слой */
+    url('/public/img/section-three/block-1.jpeg'); /* Ваше изображение */    
+    background-repeat: no-repeat;
+        
+}
+.block__two{
+    background: 
+    linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), /* Полупрозрачный белый слой */
+    url('/public/img/section-three/block-2.jpeg'); /* Ваше изображение */    
+    background-repeat: no-repeat;
+    
+}
+.block__three{
+    background: 
+    linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), /* Полупрозрачный белый слой */
+    url('/public/img/section-three/block-3.jpeg'); /* Ваше изображение */    
+    background-repeat: no-repeat;
+    
+}
+.block__four{
+    background: 
+    linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), /* Полупрозрачный белый слой */
+    url('/public/img/section-three/block-4.jpeg'); /* Ваше изображение */    
+    background-repeat: no-repeat;
+    
+}
+
+
+//========================================================================================================================================================
+
+
+// SECTION FOUR
+
+.section-four{
+    color: #fff;
+    margin-top: 200px;
+    &__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 1880px;
+        width: 100%;
+        height: 2500px;
+        border-radius: 20px;
+        background: rgb(27, 27, 27);
+        gap: 75px;
+    }
+    &__title{
+        h2{
+            /* Как работает Skystoreez? */
+            max-width: 833px;
+            max-height: 46px;
+            /* Автолейаут */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 42;
+            padding: 0px;
+            /* Inside Auto Layout */
+            flex: none;
+            order: 0;
+            align-self: stretch;
+            flex-grow: 0;
+            margin: 42px 0px;
+        }
+        p{
+            max-width: 757px;
+            max-height: 120px;
+            /* Автолейаут */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 42;
+            padding: 0px;
+            /* Inside Auto Layout */
+            flex: none;
+            order: 1;
+            flex-grow: 0;
+            margin: 42px 0px;
+            text-align: center;
+        }
+    }
+    &__img-one{
+        img{
+            /* Group 24 */
+            max-width: 1011px;
+            max-height: 698.23px;
+        }
+    }
+    &__img-two{
+        max-width: 1043px;
+        max-height: 178.62px;
+    }
+    &__discription{
+        h2{
+            max-width: 1015px;
+            color: rgb(255, 255, 255);
+            font-family: Inter;
+            font-size: 40px;
+            font-weight: 400;
+            line-height: 48px;
+            letter-spacing: 0%;
+            text-align: center;
+        }
+    }
+    &__img-three{
+        max-width: 1000px;
+        max-height: 503px;
+        border-radius: 20px;
+    }
+}
+
+//========================================================================================================================================================
+
+
+// SECTION FIVE
+
+.section-five{
+    color: #000;
+    &__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 1880px;
+        width: 100%;
+        height: 1328px;
+        border-radius: 20px;
+        gap: 69px;
+    }
+    &__title{
+        h2{
+            /* Чем Skystoreez отличается от маркетплейсов? */
+            max-width: 833px;
+            width: 100%;
+            height: 100%;
+            max-height: 97px;
+            /* Автолейаут */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 42;
+            padding: 0px;
+            /* Inside Auto Layout */
+            flex: none;
+            order: 0;
+            align-self: stretch;
+            flex-grow: 0;
+            margin: 42px 0px;
+            color: rgb(0, 0, 0);
+            font-family: Inter;
+            font-size: 40px;
+            font-weight: 400;
+            line-height: 48px;
+            letter-spacing: 0%;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        p{
+            /* Маркетплейсы предназначены для онлайн-продаж, и на таких платформах, как Instagram, продают как офлайн, так и онлайн-магазины. Наша платформа, однако, создана исключительно для поддержки и улучшения офлайновой торговли, помогая физическим магазинам усиливать свое присутствие и конкурентоспособность без необходимости перехода в онлайн. */
+            max-width: 833px;
+            max-height: 120px;
+            width: 100%;
+            height: 100%;
+            /* Автолейаут */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 42;
+            padding: 0px;
+            /* Inside Auto Layout */
+            flex: none;
+            order: 1;
+            flex-grow: 0;
+            margin: 42px 0px;
+            color: rgb(27, 27, 27);
+            font-family: Inter;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0%;
+            text-align: center;
+        }
+    }
+    &__img{
+        img{
+            /* image */
+            max-width: 1320px;
+            max-height: 600px;
+        }
+
+    }
+}
+
+

@@ -1,0 +1,97 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0);
+  width: 100%;
+  padding: 0 20px;
+  transition: background-color 1s ease;
+  z-index: 11;
+
+  &__logo {
+    z-index: 11;
+    font-size: 18px;
+  }
+
+  &__burger {
+    background: #fff; /* White background for the burger button */
+    border: 1px solid #000; /* Black border for better visibility */
+    border-radius: 50%; /* Make the button round */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    height: 40px; /* Set a square size */
+    width: 40px; /* Set a square size */
+    cursor: pointer;
+    
+    span {
+      display: block;
+      width: 20px; /* Adjust the width of the lines */
+      height: 2px;
+      background-color: #000;
+      margin: 2px 0; /* Space between lines */
+    }
+  }
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  z-index: 10;
+  @media (max-width: 768px) {
+    padding-top: 40px;
+  }
+
+  &__close {
+
+    z-index: 15; /* Увеличиваем значение z-index, чтобы кнопка была выше других элементов */
+    background: transparent;
+    border: 1px solid #000;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    font-size: 30px;
+    line-height: 21px;
+    text-align: center;
+    cursor: pointer;
+    margin-left: auto;
+    display: block;
+    @media (max-width: 768px) {
+      top: 10px;
+      right: 10px;
+      z-index: 15;
+    }
+
+  }
+  
+
+  &__nav {
+    margin-top: 20px;
+    ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+
+      li a {
+        text-decoration: none;
+        color: #000;
+      }
+
+      li a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.hero {
+   &__container{
+      max-width: 1880px;
+      max-height: 900px;
+      width: 100%;
+      border-radius: 20px;
+      background: rgba(0, 0, 0, 0.4),url(image);
+   }
+   &__back {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-image: url('/public/img/hero/image.jpeg');
+      background-size: cover; /* Изображение будет покрывать весь фон, сохраняя пропорции */
+      background-position: center; /* Центрирование изображения */
+      background-repeat: no-repeat; /* Изображение не повторяется */
+      width: 100%; /* Ширина элемента */
+      height: 100vh;
+      max-height: 900px;    
+   }
+   &__title{
+      h1{
+         max-width: 755px;
+         height: 242px;
+         color: rgb(255, 255, 255);
+         font-family: Inter;
+         font-size: clamp(42px, calc(42px + (100 - 42) * ((100vw - 390px) / (1880 - 390))), 100px);
+         font-weight: 500;
+         line-height: 121px;
+         letter-spacing: 0%;
+         text-align: center;
+         text-transform: uppercase;         
+      }
+
+   }
+    
+}

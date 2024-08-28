@@ -1,0 +1,82 @@
+.footer{
+   &__container{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+       max-width: 1880px;
+       height: 900px;
+       border-radius: 20px;
+       background: rgb(255, 255, 255);
+   }
+   &__title{
+       /* Frame 26086306 */
+       max-width: 1321px;
+       width: 100%;
+       max-height: 63px;
+       /* Автолейаут */
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       align-items: center;
+       padding: 0px;
+       margin-top: 100px;
+       p{
+           max-width: 220px;
+           height: 22px;
+           /* Автолейаут */
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+           gap: 13;
+           padding: 0px;
+           /* Inside Auto Layout */
+           flex: none;
+           order: 0;
+           flex-grow: 0;
+           margin: 13px 0px;
+           color: rgba(0, 0, 0, 0.6);
+           font-family: Inter;
+           font-size: 18px;
+           font-weight: 400;
+           line-height: 22px;
+           letter-spacing: 0%;
+           text-align: left;
+       }
+
+   }
+   &__discription{
+       /* +7 (747) 123 45 67 */
+           position: static;
+           max-width: 220px;
+           height: 29px;
+           /* Автолейаут */
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+           gap: 13;
+           padding: 0px;
+           /* Inside Auto Layout */
+           flex: none;
+           order: 1;
+           flex-grow: 0;
+           margin: 13px 0px;
+           color: rgb(0, 0, 0);
+           font-family: Inter;
+           font-size: 24px;
+           font-weight: 400;
+           line-height: 29px;
+           letter-spacing: 0%;
+           text-align: left;
+   }
+   &__img{
+       img{
+           /* Skystroeez */
+           max-width: 1314px;
+           max-height: 266px;
+
+       }
+   }
+}

@@ -1,0 +1,50 @@
+<div class="header">
+   <div class="header__logo">Skystoreez</div>
+   <button class="header__burger">
+     <span></span>
+     <span></span>
+     <span></span>
+   </button>
+ </div>
+ <div class="menu">
+  <button class="menu__close">&times;</button> <!-- Кнопка закрытия -->
+  <nav class="menu__nav">
+    <ul>
+      <li><a href="#">Что такое Skystoreez</a></li>
+      <li><a href="#">Почему мы</a></li>
+      <li><a href="#">Чем мы поможем вам</a></li>
+      <li><a href="#">Как это работает</a></li>
+      <li><a href="#">В чем отличие от маркетплейсов</a></li>
+      <li><a href="#">Контакты</a></li>
+    </ul>
+  </nav>
+</div>
+ 
+ <script>
+const burgerButton = document.querySelector('.header__burger');
+const closeButton = document.querySelector('.menu__close');
+const menu = document.querySelector('.menu');
+const colorLogo = document.querySelector('.header__logo');
+
+burgerButton.addEventListener('click', () => {
+  menu.style.display = 'block';
+  colorLogo.style.color = '#000';
+  burgerButton.style.display = 'none';
+});
+
+closeButton.addEventListener('click', () => {
+  menu.style.display = 'none';
+  colorLogo.style.color = '';
+  burgerButton.style.display = 'flex';
+});
+
+// Проверка кнопки
+closeButton.addEventListener('click', () => {
+  console.log('Кнопка закрытия нажата');
+  menu.style.display = 'none';
+  colorLogo.style.color = '';
+  burgerButton.style.display = 'flex';
+});
+
+ </script>
+ 
