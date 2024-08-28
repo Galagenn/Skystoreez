@@ -53,7 +53,6 @@
   }
 
   &__close {
-
     z-index: 15; /* Увеличиваем значение z-index, чтобы кнопка была выше других элементов */
     background: transparent;
     border: 1px solid #000;
@@ -66,23 +65,23 @@
     cursor: pointer;
     margin-left: auto;
     display: block;
-    @media (max-width: 768px) {
-      top: 10px;
-      right: 10px;
-      z-index: 15;
-    }
-
+    
   }
   
 
   &__nav {
     margin-top: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
     ul {
       list-style: none;
       padding: 0;
       display: flex;
       justify-content: space-between;
       font-size: 14px;
+      @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+      }
 
       li a {
         text-decoration: none;

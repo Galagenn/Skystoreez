@@ -1,17 +1,15 @@
-
-
 .section-one{
     &__title{
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 60px;
+        gap: clamp(60px, calc(60px + (100 - 60) * ((768px - 100vw) / (768 - 370))), 100px);
+          
         h2{
            /* Skystoreez – это инновационная платформа, которая революционизирует мир розничной торговли. */
             max-width: 1300px;
             height: 92px;
-            left: 310px;
-            top: 1010px; 
+            text-align: center;
             font-size: clamp(20px, calc(20px + (38 - 20) * ((100vw - 390px) / (1880 - 390))), 38px);
             color: rgb(0, 0, 0);
             font-weight: 500;
@@ -61,6 +59,11 @@
     margin-top: 200px;
     max-height: 800px;
     height: 100vh;
+    @media (max-width: 768px) {
+        max-height: 1200px;
+        height: 1200px;
+
+    }
     &__title{
         display: flex;
         flex-direction: column;
@@ -80,6 +83,8 @@
             letter-spacing: 0%;
             text-align: left;
             text-transform: uppercase;
+            text-align: center;
+
         }
         p{
             /* Помогаем ритейлерам решать ключевые задачи, улучшая качество взаимодействия с их клиентами. */
@@ -106,8 +111,8 @@
     gap: 20px;
     p{
         /* Покупатели все чаще выбирают онлайн-шопинг, что негативно отражается на традиционных магазинах. */
-        width: 360px;
-        height: 105px;
+        max-width: 360px;
+        max-height: 105px;
         color: rgb(0, 0, 0);
         font-family: Inter;
         font-size: 20px;
@@ -115,6 +120,9 @@
         line-height: 24px;
         letter-spacing: 0%;
         text-align: left;
+        @media (max-width: 768px) {
+            font-size: 15px;
+        }
     }
     &__top{
         display: flex;
@@ -163,6 +171,9 @@
             letter-spacing: 0%;
             text-align: left;
             text-transform: uppercase;
+            @media (max-width: 520px) {
+                display: none;
+            }
         }
     }
 }
@@ -177,7 +188,9 @@
     max-width: 650px;
     height: 328px;
     width: 45%;
-    
+    @media (max-width: 768px) {
+        width: 90%;
+    }
 }
 
 
@@ -245,7 +258,7 @@
         height: 2500px;
         border-radius: 20px;
         background: rgb(27, 27, 27);
-        gap: 75px;
+        gap: 110px;
     }
     &__title{
         h2{
