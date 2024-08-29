@@ -204,7 +204,7 @@
 // SECTION THREE
 
 .section-three{
-    margin-top: 200px;
+    margin-top: clamp(60px, calc(60px + (200 - 60) * (100vw - 375px) / (1300 - 375)), 200px);
     &__title{
         display: flex;
         flex-direction: column;
@@ -212,8 +212,12 @@
         text-align: center;
         margin-bottom: 70px;
         color: #000;
+        h2{
+            font-size: clamp(20px, calc(20px + (38 - 20) * (100vw - 375px) / (1300 - 375)), 38px);
+        }
         p{
             text-align: center;
+            font-size: clamp(16px, calc(16px + (20 - 16) * (100vw - 375px) / (1300 - 375)), 20px);
         }
     }
 }
