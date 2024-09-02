@@ -20,7 +20,7 @@
   &__burger {
     background: #fff; /* White background for the burger button */
     border: 1px solid #000; /* Black border for better visibility */
-    border-radius: 50%; /* Make the button round */
+    border-radius: 12px; /* Make the button round */
     display: flex;
     flex-direction: column;
     justify-content: center; /* Center vertically */
@@ -53,18 +53,19 @@
   }
 
   &__close {
-    z-index: 15; /* Увеличиваем значение z-index, чтобы кнопка была выше других элементов */
+    z-index: 15;
     background: transparent;
     border: 1px solid #000;
-    border-radius: 50%;
+    border-radius: 12px;
     width: 35px;
     height: 35px;
     font-size: 30px;
-    line-height: 21px;
+    line-height: 10px;
     text-align: center;
     cursor: pointer;
     margin-left: auto;
     display: block;
+    padding-bottom: 3px;
     
   }
   

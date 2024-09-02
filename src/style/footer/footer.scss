@@ -84,4 +84,44 @@
 
        }
    }
+   &__bottom{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        height: 81px;
+        @media (max-width: 768px) {
+            flex-direction: column;
+            justify-content: space-around;
+            height: 100px;
+
+        }
+
+    }
+}
+
+.bottom{
+        &__discription{
+            p{
+                /* Frame 26086313 */
+                max-width: 437px;
+                max-height: 19px;
+                width: 100%;
+                margin: auto;
+                /* Автолейаут */
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 10;
+                padding: 0px;
+                color: rgb(0, 0, 0);
+                font-family: Inter;
+                font-size: clamp(12px, calc(12px + (16 - 12) * (100vw - 375px) / (1300 - 375)), 16px);
+                font-weight: 400;
+                line-height: 19px;
+                letter-spacing: 0%;
+                text-align: left;
+            }            
+        }
 }
