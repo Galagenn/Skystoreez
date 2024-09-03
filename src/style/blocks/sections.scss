@@ -223,31 +223,38 @@
 }
 
 .block__one{
-    background: 
-    linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), /* Полупрозрачный белый слой */
-    url('/public/img/section-three/block-1.jpeg'); /* Ваше изображение */    
+    background: linear-gradient(rgba(255, 255, 255), rgba(255, 255, 255)), url(/public/img/section-three/block-1.jpeg);
     background-repeat: no-repeat;
+    background-blend-mode: color-burn;
+    background-size: 100%;
+    @media (max-width: 1200px) {
+        background-position-y: center;
+    }
         
 }
 .block__two{
-    background: 
-    linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), /* Полупрозрачный белый слой */
+    background: linear-gradient(rgba(255, 255, 255), rgba(255, 255, 255)), /* Полупрозрачный белый слой */
     url('/public/img/section-three/block-2.jpeg'); /* Ваше изображение */    
     background-repeat: no-repeat;
-    
+    background-blend-mode: color-burn;
+    background-size: 100%;
+    background-position-y: center;
 }
 .block__three{
-    background: 
-    linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), /* Полупрозрачный белый слой */
+    background: linear-gradient(rgba(255, 255, 255), rgba(255, 255, 255)), /* Полупрозрачный белый слой */
     url('/public/img/section-three/block-3.jpeg'); /* Ваше изображение */    
     background-repeat: no-repeat;
-    
+    background-blend-mode: color-burn;
+    background-size: 100%;
+    background-position-y: center;
 }
 .block__four{
-    background: 
-    linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), /* Полупрозрачный белый слой */
+    background: linear-gradient(rgba(255, 255, 255), rgba(255, 255, 255)), /* Полупрозрачный белый слой */
     url('/public/img/section-three/block-4.jpeg'); /* Ваше изображение */    
     background-repeat: no-repeat;
+    background-blend-mode: color-burn;
+    background-size: 100%;
+    background-position-y: center;
     
 }
 

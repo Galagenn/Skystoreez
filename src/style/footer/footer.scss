@@ -6,7 +6,7 @@
       align-items: center;
        max-width: 1880px;
        height: clamp(330px, calc(330px + (900 - 330) * (100vw - 375px) / (1880 - 375)), 900px);
-       border-radius: 20px;
+       border-radius: 20px 20px 0 0;       
        background: rgb(255, 255, 255);
    }
    &__title{
@@ -92,7 +92,7 @@
         height: 81px;
         @media (max-width: 768px) {
             flex-direction: column;
-            justify-content: space-around;
+            justify-content: space-evenly;
             height: 100px;
 
         }
